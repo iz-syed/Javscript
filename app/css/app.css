@@ -1,12 +1,58 @@
 :root {
   --app:true;
+  --gray:#ddd;
+  --white:#fff;
+  --gray-dark:#ccc;
+  --gradiant-1:#7319fa;
+  --gradiant-2:#ff33b4;
+  --gradiant-3:#ff7e29;
 }
 
-h1 {
-  background-image: linear-gradient(60deg, #7319fa, #ff33b4, #ff7e29);
+.container {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--gray);
+  padding-bottom: 8px;
+}
+header h1 {
+  background-image: linear-gradient(60deg, var(--gradiant-1), var(--gradiant-2), var(--gradiant-3));
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
   text-align: center;
-  font-size: 64px;
+  font-size: 32px;
+  margin: 0;
+}
+header .back a {
+  text-decoration: none;
+  padding: 2px 6px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+}
+header .back a:hover {
+  background-image: linear-gradient(60deg, var(--gradiant-1), var(--gradiant-2), var(--gradiant-3));
+  border-color: var(--white);
+  color: var(--white);
+}
+
+pre {
+  line-height: 24px;
+  font-size: 14px;
+  color: var(--gradiant-2);
+}
+pre:not(:last-child) {
+  border-bottom: 1px solid var(--gray);
+}
+pre b {
+  color: var(--gradiant-1);
 }/*# sourceMappingURL=app.css.map */
